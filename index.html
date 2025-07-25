@@ -6,6 +6,10 @@
   <title>EcoThinker</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -14,7 +18,7 @@
     }
 
     header {
-      background-image: url('https://via.placeholder.com/1200x800');
+      background-image: url('images/Untitled-3.png');
       background-size: cover;
       background-position: center;
       height: 80vh;
@@ -29,7 +33,7 @@
     header h1 {
       font-size: 4rem;
       margin: 0;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     }
 
     .intro-section {
@@ -38,12 +42,13 @@
       flex-direction: column;
       align-items: center;
       background-color: #fff;
+      text-align: center;
     }
 
     .profile-pic {
       border-radius: 50%;
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       border: 4px solid #66bb6a;
       margin-bottom: 1.5rem;
@@ -51,10 +56,10 @@
 
     .intro-text {
       max-width: 700px;
-      text-align: center;
       font-size: 1.1rem;
       margin-bottom: 2rem;
       padding: 0 1rem;
+      line-height: 1.6;
     }
 
     .buttons {
@@ -62,7 +67,7 @@
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .buttons a {
@@ -72,28 +77,27 @@
       text-decoration: none;
       border-radius: 8px;
       transition: background-color 0.3s;
-      text-align: center;
+      font-weight: bold;
     }
 
     .buttons a:hover {
       background-color: #558b2f;
     }
 
-    .footer {
+    footer {
+      background-color: #e8f5e9;
       padding: 2rem 1rem;
       text-align: center;
       font-size: 1rem;
-      background-color: #e8f5e9;
     }
 
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.5rem;
+      header {
+        height: 60vh;
       }
 
-      .profile-pic {
-        width: 120px;
-        height: 120px;
+      header h1 {
+        font-size: 2.5rem;
       }
 
       .intro-text {
@@ -107,52 +111,55 @@
     }
 
     @media (max-width: 480px) {
-      header {
-        height: 60vh;
-      }
-
-      header h1 {
-        font-size: 2rem;
+      .profile-pic {
+        width: 120px;
+        height: 120px;
       }
 
       .intro-section {
         padding: 2rem 1rem;
       }
 
-      .footer {
+      footer {
         font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>EcoThinker</h1>
   </header>
 
   <section class="intro-section">
     <img
-      src="https://via.placeholder.com/150"
+      src="images/Untitled-4.png"
       alt="EcoThinker Profile Picture"
       class="profile-pic"
     />
+
     <div class="buttons">
       <a href="https://www.instagram.com/ecothinker.now/">Follow Me!</a>
     </div>
+
     <div class="intro-text">
       <p>
-        Welcome to EcoThinker 🌱 — where we uncover the hidden environmental truths behind everyday things. Follow along for digestible facts, tips, and inspiration to live more consciously and sustainably. <br><br>
-        <em>Hi, my name is Ryan. I started this Instagram account with a simple goal: to foster awareness on how our actions impact the environment...</em>
+        Welcome to EcoThinker 🌱 — where we uncover the hidden environmental truths behind everyday things. Follow along for digestible facts, tips, and inspiration to live more consciously and sustainably.
+        <br><br>
+        <em>Hi, my name is Ryan. I started this Instagram account with a simple goal: to foster awareness on how our actions impact the environment. I firmly believe that well-informed people will make better decisions, and together, these choices can reshape our planet's future. Let us rethink the way we live, one post at a time 💚</em>
       </p>
     </div>
+
     <div class="buttons">
       <a href="mailto:ecothinkerrl@gmail.com">Contact Me!</a>
       <a href="https://buymeacoffee.com/ecothinker?new=1">Donate</a>
     </div>
   </section>
 
-  <footer class="footer">
+  <footer>
     <p>Thanks for reading and for thinking green 💚</p>
   </footer>
+
 </body>
 </html>
