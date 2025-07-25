@@ -1,123 +1,158 @@
-<style>
-  body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-
-  header {
-    background-image: url('images/Untitled-3.png');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 0 1rem;
-  }
-
-  header h1 {
-    font-size: 4rem;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  }
-
-  .intro-section {
-    padding: 3rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-  }
-
-  .profile-pic {
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border: 4px solid #66bb6a;
-    margin-bottom: 1.5rem;
-  }
-
-  .intro-text {
-    max-width: 700px;
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-  }
-
-  .buttons a {
-    background-color: #66bb6a;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    text-align: center;
-  }
-
-  .buttons a:hover {
-    background-color: #558b2f;
-  }
-
-  .footer {
-    padding: 2rem 1rem;
-    text-align: center;
-    font-size: 1rem;
-    background-color: #e8f5e9;
-  }
-
-  /* ------------------------ */
-  /* 📱 Responsive Fixes Here */
-  /* ------------------------ */
-
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 2.5rem;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoThinker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-    }
-
-    .intro-text {
-      font-size: 1rem;
-    }
-
-    .buttons a {
-      flex: 1 1 100%;
-      max-width: 300px;
-    }
-  }
-
-  @media (max-width: 480px) {
     header {
-      height: 60vh;
+      background-image: url('https://via.placeholder.com/1200x800');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 1rem;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 4rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     }
 
     .intro-section {
-      padding: 2rem 1rem;
+      padding: 3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border: 4px solid #66bb6a;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro-text {
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons a {
+      background-color: #66bb6a;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .buttons a:hover {
+      background-color: #558b2f;
     }
 
     .footer {
-      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 1rem;
+      background-color: #e8f5e9;
     }
-  }
-</style>
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+
+      .intro-text {
+        font-size: 1rem;
+      }
+
+      .buttons a {
+        flex: 1 1 100%;
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        height: 60vh;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .intro-section {
+        padding: 2rem 1rem;
+      }
+
+      .footer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EcoThinker</h1>
+  </header>
+
+  <section class="intro-section">
+    <img
+      src="https://via.placeholder.com/150"
+      alt="EcoThinker Profile Picture"
+      class="profile-pic"
+    />
+    <div class="buttons">
+      <a href="https://www.instagram.com/ecothinker.now/">Follow Me!</a>
+    </div>
+    <div class="intro-text">
+      <p>
+        Welcome to EcoThinker 🌱 — where we uncover the hidden environmental truths behind everyday things. Follow along for digestible facts, tips, and inspiration to live more consciously and sustainably. <br><br>
+        <em>Hi, my name is Ryan. I started this Instagram account with a simple goal: to foster awareness on how our actions impact the environment...</em>
+      </p>
+    </div>
+    <div class="buttons">
+      <a href="mailto:ecothinkerrl@gmail.com">Contact Me!</a>
+      <a href="https://buymeacoffee.com/ecothinker?new=1">Donate</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Thanks for reading and for thinking green 💚</p>
+  </footer>
+</body>
+</html>
